@@ -1,0 +1,83 @@
+
+header{
+	text-align: center;
+}
+.addParameter{
+	display: inline-block;
+	margin: 5px;
+}
+
+.roundBorder{
+	border-radius: 6px;
+	border: 1px solid #aba5a5;
+}
+
+input[type=button]{
+	padding: 0 10px;
+    min-width: 50px;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    background-color: #636161;
+}
+
+input[type=submit]{
+	padding: 0 10px;
+    min-width: 50px;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    background-color: #636161;
+}
+
+.main{
+	border: 1px solid #aba5a5;
+	border-radius: 8px 8px 0 0;
+	max-width: 750px;
+	margin: auto auto;
+}
+
+.addNsearch{
+	padding: 1.5em;
+	width: 100%;
+	background: linear-gradient(rgba(255, 255, 255, 0), rgba(193, 193, 191, 0.36));
+}
+
+.searchVehicles{
+	text-align: right;
+}
+
+#vehicleType{
+	padding: 0 15px;
+}
+
+.vehicleList{
+	border-top: 1px solid #aba5a5;
+}
+
+.vehicleList table{
+/* 	display: none;	 */
+}
+
+hr{
+	border: 0;
+	border-top: 1px solid #9a9a9a;
+}
+
+.json{
+	text-align: center;
+	display: none;
+	overflow-x: auto;
+}
+
+.message{
+	text-align: center;
+/* 	display: none; */
+}
+
+.footer{
+	padding-top: 10px;
+	text-align: right;
+	max-width: 750px;
+	margin: auto auto;
+}
