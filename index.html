@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Vehicle Search</title>
+
+<!--[if lte IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/search.js"></script>
+<link rel="stylesheet" type="text/css" href="css/search.css">
+
+</head>
+<body class="container">
+	<header>
+		<h1>Vehicle Search</h1>
+	</header>
+	<section class="main">
+		<section class="addNsearch">
+		<form id="vehicleForm">
+			<div class="addVehicles">
+				<div class="addParameter">
+					<label for="vehicleType">Type</label>
+					<select class="roundBorder form-control" id="vehicleType" required>
+						<option value="">Select a type</option>
+						<option>New</option>
+						<option>Used</option>
+						<option>Certified</option>
+					</select>
+				</div>
+				<div class="addParameter">
+					<label for="vehicleMake">Make</label>
+					<input class="roundBorder form-control" type="text" id="vehicleMake" name="vehicleMake" required>
+				</div>
+				<div class="addParameter">
+					<label for="vehicleModel">Model</label>
+					<input class="roundBorder form-control" type="text" id="vehicleModel" name="vehicleModel" required>
+				</div>
+				<div class="addParameter">
+					<input class="roundBorder form-control" type="submit" id="addVehicle" value="+">
+				</div>
+			</div>
+			<hr/>
+			<div class="searchVehicles">
+				<input type="search" placeholder="Search" id="searchVehicle" class="roundBorder">
+	            <i class="glyphicon glyphicon-search"></i>
+			</div>
+		</form>
+		</section>
+		<section class="vehicleList">
+			<div id="vehicleTbl" class="table-responsive">
+			
+			</div>
+			<div class="message">
+				No vehicles available.
+			</div>
+			<div class="json">	
+			</div>
+		</section>
+		</section>
+	<div class="footer">
+		<input class="roundBorder" type="button" id="jsonFormat" value="Show JSON">
+	</div>
+
+</body>
+</html>
